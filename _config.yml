@@ -1,21 +1,21 @@
 # Site settings
-title: "The sleeping Dilemma"
-author: "Hugo Sereno Ferreira"
+title: "Not Even Wrong"
+author: "Khaled Maamra"
 description: "This is a blog about software, some mathematics, and the occasional philosophy. Not necessarily in that order."
-keywords: "Software Engineering, Mathematics, Philosophy, Scala, Epistemology, Existentialism, Programming, Machine-Learning, Artificial Intelligence, Statistics, Probability, Puzzles"
-biography: "I am a Professor of Software Engineering at the <a href='http://www.fe.up.pt'>Faculty of Engineering</a>, University of Porto and Senior Researcher at <a href='https://www.inesctec.pt'>INESC TEC</a>. Here you can find my <a href='/assets/thesis.pdf'>PhD Thesis</a> and my <a href='/assets/cv.pdf'>Résumé</a>."
-colophon: "© MMXIII — MMXVI by Hugo Sereno Ferreira.<br>Content available under <a href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>Creative Commons (BY-NC-SA)</a> unless otherwise noted.<br>This site is hosted at <a href='https://pages.github.com/'>Github Pages</a> and created with <a href='http://jekyllrb.com/'>Jekyll</a>.<br> <a class='fa fa-github' href='https://github.com/hugoferreira' title='GitHub'></a> <a class='fa fa-twitter' href='https://twitter.com/{{site.twitter_username}}' title='Twitter'></a> <a class='fa fa-linkedin' href='https://id.linkedin.com/in/{{site.linkedin_username}}' title='LinkedIn'></a></br>"
+keywords: "Mathematics, Algorithms, Data Structures,  Programming, Machine-Learning, Statistics, Probability, Puzzles, Typography, Philosophy, Books"
+biography: "I used to work in Academia, now I do research in the financial industry"
+colophon: "© MMXIII — MMXVI by K.M.<br>Content available under <a href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>Creative Commons (BY-NC-SA)</a> unless otherwise noted.<br>This site was created with  <a href='https://github.com/hugoferreira/papyrus-theme'>Papyrus</a> and <a href='http://jekyllrb.com/'>Jekyll</a>.<br> <a class='fa fa-github' href= 'https://github.com/fuspkm'  title='GitHub'></a> <a class='fa fa-twitter' href='https://twitter.com/fuspkm' title='Twitter'></a> <a class='fa fa-linkedin' href='https://id.linkedin.com/in/'{{site.linkedin_username}} title='LinkedIn'></a></br>"
 
 baseurl: ""
-url: "http://hugosereno.eu"
+url: ""
 
-twitter_username: ferreira_hugo
-github_username: hugoferreira
-linkedin_username: hugoserenoferreira
-facebook_username: hugo.sereno.ferreira
-google-analytics: UA-69060-5
+twitter_username: fuspkm
+github_username: fuspkm
+linkedin_username: ""
+facebook_username: ""
+google-analytics: ""
 
 simple_search: http://google.com/search
 markdown: kramdown
 highlighter: rouge
-permalink: /blog/:year/:month/:day/:title/
+permalink: /blog/:categories/:title/
