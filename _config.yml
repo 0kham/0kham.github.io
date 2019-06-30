@@ -4,7 +4,7 @@ author: "Khaled Maamra"
 description: "Just a place where I put down things I find interesting or that I just learned about mathematics, algorithms and few other things."
 keywords: "Mathematics, Algorithms, Data Structures,  Programming, Machine-Learning, Statistics, Probability, Puzzles, Typography, Philosophy, Books"
 biography: "I used to work in Academia, now I do R&D in the financial industry"
-colophon: "© MMXIII — MMXVI by K.M.<br>Content available under <a href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>Creative Commons (BY-NC-SA)</a> unless otherwise noted.<br>This site was created with  <a href='https://github.com/hugoferreira/papyrus-theme'>Papyrus</a> and <a href='http://jekyllrb.com/'>Jekyll</a>.<br> <a class='fa fa-github' href= 'https://github.com/fuspkm'  title='GitHub'></a> <a class='fa fa-twitter' href='https://twitter.com/fuspkm' title='Twitter'></a> <a class='fa fa-linkedin' href='https://id.linkedin.com/in/'{{site.linkedin_username}} title='LinkedIn'></a></br>"
+colophon: "© MMXIII — MMXVI by K.M.<br>Content available under <a href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>Creative Commons (BY-NC-SA)</a> unless otherwise noted.<br>This site was created with  <a href='https://github.com/hugoferreira/papyrus-theme'>Papyrus</a> and <a href='http://jekyllrb.com/'>Jekyll</a>.<br> <a class='fa fa-github' href= 'https://github.com/0kham'  title='GitHub'></a> <a class='fa fa-twitter' href='https://twitter.com/fuspkm' title='Twitter'></a> <a class='fa fa-linkedin' href='https://id.linkedin.com/in/'{{site.linkedin_username}} title='LinkedIn'></a></br>"
 
 baseurl: ""
 url: ""
