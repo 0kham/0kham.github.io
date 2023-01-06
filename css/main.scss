@@ -16,7 +16,9 @@ $text-color:       hsl(0, 0%, 25%);
 $alt-color:        hsl(0, 70%, 46%);
 $alt-color-darker: darken($alt-color, 6%);
 
-$article-bg-color: hsl(35, 36%, 95%);
+// $article-bg-color: hsl(35, 36%, 95%); // old color
+// $article-bg-color: hsl(51, 33%, 96%);  // good test color
+$article-bg-color: hsl(51, 33%, 96%); 
 $background-color: darken($article-bg-color, 6%);
 $bg-color-darker:  darken($article-bg-color, 15%);
 $alt-text-color:   darken($article-bg-color, 60%);
