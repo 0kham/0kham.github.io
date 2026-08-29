@@ -9,7 +9,7 @@
     .cm    {  font-style: italic } // Comment.Multiline
     .cp    {  color: var(--color-comment); font-weight: bold }  // Comment.Preproc
     .c1    {  color: var(--color-comment); font-style: italic } // Comment.Single
-    .cs    {  color: var(--color-comment); font-weight: bold; font-style: italic } // Comment.Special
+    .cs    {  color: var(--color-comment); font-weight: 500; font-style: italic } // Comment.Special
     .gd    {  } // Generic.Deleted
     .gd .x {  } // Generic.Deleted.Specific
     .ge    {  font-style: italic } // Generic.Emph
@@ -19,27 +19,27 @@
     .gi .x {  } // Generic.Inserted.Specific
     .go    {  } // Generic.Output
     .gp    {  } // Generic.Prompt
-    .gs    {  font-weight: bold } // Generic.Strong
+    .gs    {  font-weight: 500 } // Generic.Strong
     .gu    {  } // Generic.Subheading
     .gt    {  } // Generic.Traceback
-    .kc    {  font-weight: bold } // Keyword.Constant
-    .kd    {  font-weight: bold } // Keyword.Declaration
-    .kp    {  font-weight: bold } // Keyword.Pseudo
-    .kr    {  font-weight: bold } // Keyword.Reserved
-    .kt    {  font-weight: bold } // Keyword.Type
+    .kc    {  font-weight: 500 } // Keyword.Constant
+    .kd    {  } // Keyword.Declaration
+    .kp    {  font-weight: 500 } // Keyword.Pseudo
+    .kr    {  font-weight: 500 } // Keyword.Reserved
+    .kt    {  font-weight: 500 } // Keyword.Type
     .m     {  } // Literal.Number
     .s     {  font-style: italic; color: #0eaf34 } // Literal.String
     .na    {  } // Name.Attribute
     .nb    {  color: var(--color-accent) } // Name.Builtin
-    .nc    {  font-weight: bold } // Name.Class
+    .nc    {  font-weight: 500 } // Name.Class
     .no    {  } // Name.Constant
     .ni    {  } // Name.Entity
-    .ne    {  font-weight: bold } // Name.Exception
-    .nf    {  font-weight: bold } // Name.Function
+    .ne    {  font-weight: 500 } // Name.Exception
+    .nf    {  font-weight: 500 } // Name.Function
     .nn    {  } // Name.Namespace
     .nt    {  } // Name.Tag
     .nv    {  } // Name.Variable
-    .ow    {  font-weight: bold } // Operator.Word
+    .ow    {  font-weight: 500 } // Operator.Word
     .w     {  } // Text.Whitespace
     .mf    {  } // Literal.Number.Float
     .mh    {  } // Literal.Number.Hex

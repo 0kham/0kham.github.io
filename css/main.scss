@@ -4,54 +4,41 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: 'Merriweather','PT Serif', Georgia, Times, 'Times New Roman', serif;
-// $base-font-size:   11pt;
-$base-font-size:   13pt;
+$base-font-family:    'Merriweather', 'PT Serif', Georgia, Times, 'Times New Roman', serif;
+$heading-font-family: 'PT Serif', Georgia, Times, 'Times New Roman', serif;
+$base-font-size:   10.4pt;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$mono-font-family:  'Source Code Pro',Menlo,Monaco, Inconsolata;
-
-$text-color:       hsl(0, 0%, 25%);
-
-$alt-color:        hsl(0, 70%, 46%);
-$alt-color-darker: darken($alt-color, 6%);
-
-// $article-bg-color: hsl(0, 0%, 100%); // old color white
-// $article-bg-color: hsl(51, 33%, 96%);  // good test color
-$article-bg-color: hsl(51, 33%, 96%); 
-$background-color: darken($article-bg-color, 6%);
-$bg-color-darker:  darken($article-bg-color, 15%);
-$alt-text-color:   darken($article-bg-color, 60%);
-$highlight-text-color: rgba(199, 35, 35, 0.07);
-
-$subdued-border:   rgba($bg-color-darker, 0.5);
+$mono-font-family:  'Fira Code', Menlo, Monaco, Inconsolata, monospace;
 
 :root {
-  --color-text: #{$text-color};
-  --color-text-muted: #{darken($article-bg-color, 60%)};
-  --color-accent: #{$alt-color};
-  --color-accent-strong: #{$alt-color-darker};
-  --color-paper: #{$article-bg-color};
-  --color-page: #{$background-color};
-  --color-border: #{$bg-color-darker};
-  --color-subdued-border: #{$subdued-border};
-  --color-highlight: #{$highlight-text-color};
-  --color-comment: #{lighten($text-color, 35%)};
+  --color-text: #404040;
+  --color-text-muted: #616161;
+  --color-comment: #bfbfbf;
+  --color-accent: #c72323;
+  --color-accent-strong: #ad1f1f;
+  --color-paper: #fafafa;
+  --color-page: #ebebeb;
+  --color-border: #d4d4d4;
+  --color-subdued-border: rgba(212, 212, 212, 0.5);
+  --color-highlight: rgba(199, 35, 35, 0.07);
+  --color-shadow: rgba(160, 160, 160, 0.05);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-text: hsl(40, 12%, 80%);
-    --color-text-muted: hsl(30, 8%, 55%);
-    --color-accent: hsl(0, 75%, 64%);
-    --color-accent-strong: hsl(0, 80%, 72%);
-    --color-paper: hsl(28, 14%, 15%);
-    --color-page: hsl(25, 16%, 9%);
-    --color-border: hsl(28, 10%, 26%);
-    --color-subdued-border: hsla(28, 10%, 60%, 0.3);
-    --color-highlight: hsla(0, 80%, 64%, 0.14);
-    --color-comment: hsl(30, 6%, 52%);
+    --color-text: hsl(0, 0%, 82%);
+    --color-text-muted: hsl(0, 0%, 58%);
+    --color-comment: hsl(0, 0%, 45%);
+    --color-accent: hsl(0, 70%, 64%);
+    --color-accent-strong: hsl(0, 70%, 72%);
+    --color-paper: hsl(0, 0%, 14%);
+    --color-page: hsl(0, 0%, 8%);
+    --color-border: hsl(0, 0%, 26%);
+    --color-subdued-border: hsla(0, 0%, 60%, 0.25);
+    --color-highlight: hsla(0, 70%, 64%, 0.12);
+    --color-shadow: transparent;
   }
 }
 

@@ -40,8 +40,9 @@ body {
       color: var(--color-accent-strong);
       display: inline-block;
       float: left;
-      font-size: 3.2em;
+      font-size: 3.4em;
       line-height: 0.7em;
+      font-family: $heading-font-family;
       font-style: normal;
       font-weight: bold;
       margin: 0.12em 0.15em 0 -0.01em;
@@ -50,26 +51,34 @@ body {
     min-height: 2em + $base-line-height;
   }
 
-  h1 {
-    font-weight: 600;
+  h1, h2, h3 {
+    line-height: 1.4em;
+    font-weight: bold;
   }
 
   h2 {
-    margin-top: 1em;
+    margin-top: 2em;
     font-size: 1.6em;
-    margin-bottom: 0.6em;
+    margin-bottom: 1em;
   }
 
   h3 {
+    font-family: $heading-font-family;
     font-size: 1.2em;
     font-variant: small-caps;
     text-transform: lowercase;
-    font-weight: bold;
     letter-spacing: 0.15em;
   }
 }
 
 article {
+  p {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+  }
+
   ul li {
     padding-left: 0em;
     margin-bottom: 0;
@@ -127,14 +136,19 @@ blockquote {
 
 .main {
   background-color: var(--color-paper);
-  border: 1px solid var(--color-border);
+  box-shadow: 0 0 5px 5px var(--color-shadow);
   margin-top: 16px;
   padding: 16px;
-  border-radius: 16px; // this was 4px in the first place and 12px in the white version
-  border-top: 3px solid var(--color-accent); //for the top red bar
+  border-radius: 12px;
 }
 
-.small-ornament, .big-ornament {
+@media (prefers-color-scheme: dark) {
+  .main {
+    border: 1px solid var(--color-border);
+  }
+}
+
+.small-ornament {
   > svg {
     display: inline-block;
     vertical-align: middle;
@@ -149,47 +163,18 @@ blockquote {
   }
 }
 
-.big-ornament {
-  > svg {
-    width: 14em;
-    height: 4em;
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
-}
-
 header {
   margin-bottom: 1em;
 
   p {
     margin-top: 1em;
   }
-
-  // subdued back-to-home label sitting above the post title, so the
-  // title reads as the dominant element instead of competing with it
-  a.back-home,
-  a.back-home:visited,
-  a.back-home:active {
-    display: inline-block;
-    margin-bottom: 0.75em;
-    font-size: $small-font-size;
-    font-variant: small-caps;
-    text-transform: lowercase;
-    letter-spacing: 0.15em;
-    color: var(--color-text-muted);
-  }
-
-  a.back-home:hover {
-    color: var(--color-accent-strong);
-    background-color: transparent;
-  }
 }
 
-footer {
-  margin-top: 1em;
-  margin-bottom: 1em;
+// slim icon row used at the top of every page (social links + home),
+// styled like a quiet secondary footer rather than a loud nav bar
+footer, .navbar {
   font-size: $small-font-size;
-
   color: var(--color-text-muted);
 
   .biography {
@@ -207,9 +192,21 @@ footer {
     letter-spacing: 0.15em;
   }
 
-  a, a:hover {
-      color: var(--color-accent-strong);
+  a.fa {
+    color: var(--color-comment);
+    margin: 0 0.25em 0.8em;
+    transition: color 400ms;
+
+    &:hover {
+      color: var(--color-accent);
+      background-color: transparent;
+    }
   }
+}
+
+footer {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .footnotes {
@@ -223,38 +220,6 @@ footer {
 
   > ol {
     margin-left: -1.5em;
-  }
-}
-
-// Table-of-contents style index, used on the homepage to list posts
-// per category with a dotted leader running to the date, like an
-// index page in a printed book.
-.toc {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1.5em;
-
-  li {
-    display: flex;
-    align-items: baseline;
-    margin-bottom: 0.5em;
-
-    &:before {
-      content: none;
-    }
-  }
-
-  .leader {
-    flex: 1 1 auto;
-    margin: 0 0.5em;
-    border-bottom: 1px dotted var(--color-border);
-    height: 0.6em;
-  }
-
-  time {
-    white-space: nowrap;
-    font-size: $small-font-size;
-    color: var(--color-text-muted);
   }
 }
 
@@ -283,7 +248,11 @@ table {
   }
 
   th {
+    font-variant: small-caps;
+    text-transform: lowercase;
+    font-weight: bold;
+    font-size: $base-font-size * 1.1;
+    letter-spacing: 0.1em;
     padding-bottom: 0.6em;
-    // border-bottom: 2px solid $alt-color;
   }
 }
