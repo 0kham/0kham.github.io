@@ -209,6 +209,49 @@ footer {
   margin-bottom: 1em;
 }
 
+// inline SVG diagrams embedded directly in post content
+.diagram {
+  margin: 1.5em 0;
+  text-align: center;
+
+  svg {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .diagram-axis, .diagram-edge {
+    stroke: var(--color-border);
+  }
+
+  .diagram-label {
+    font-size: 10px;
+    font-family: $base-font-family;
+    fill: var(--color-text-muted);
+  }
+
+  .diagram-accent {
+    stroke: var(--color-accent);
+    fill: none;
+  }
+
+  circle.diagram-accent {
+    fill: var(--color-accent);
+  }
+
+  .diagram-node {
+    fill: var(--color-paper);
+    stroke: var(--color-accent);
+    stroke-width: 2;
+  }
+
+  .diagram-node-label {
+    font-size: 13px;
+    font-family: $base-font-family;
+    font-weight: bold;
+    fill: var(--color-text);
+  }
+}
+
 .footnotes {
   border-top: 1px solid var(--color-subdued-border);
   padding-top: 1em;
