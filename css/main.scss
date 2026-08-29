@@ -27,6 +27,34 @@ $highlight-text-color: rgba(199, 35, 35, 0.07);
 
 $subdued-border:   rgba($bg-color-darker, 0.5);
 
+:root {
+  --color-text: #{$text-color};
+  --color-text-muted: #{darken($article-bg-color, 60%)};
+  --color-accent: #{$alt-color};
+  --color-accent-strong: #{$alt-color-darker};
+  --color-paper: #{$article-bg-color};
+  --color-page: #{$background-color};
+  --color-border: #{$bg-color-darker};
+  --color-subdued-border: #{$subdued-border};
+  --color-highlight: #{$highlight-text-color};
+  --color-comment: #{lighten($text-color, 35%)};
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: hsl(40, 12%, 80%);
+    --color-text-muted: hsl(30, 8%, 55%);
+    --color-accent: hsl(0, 75%, 64%);
+    --color-accent-strong: hsl(0, 80%, 72%);
+    --color-paper: hsl(28, 14%, 15%);
+    --color-page: hsl(25, 16%, 9%);
+    --color-border: hsl(28, 10%, 26%);
+    --color-subdued-border: hsla(28, 10%, 60%, 0.3);
+    --color-highlight: hsla(0, 80%, 64%, 0.14);
+    --color-comment: hsl(30, 6%, 52%);
+  }
+}
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
   "base",

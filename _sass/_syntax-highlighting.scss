@@ -2,14 +2,14 @@
  * Syntax highlighting styles
  */
  .highlight {
-    .c     {  color: lighten($text-color, 35%); font-style: italic } // Comment
+    .c     {  color: var(--color-comment); font-style: italic } // Comment
     .err   {  } // Error
-    .k     {  color: $alt-color } // Keyword
+    .k     {  color: var(--color-accent) } // Keyword
     .o     {  font-weight: bold }  // Operator
     .cm    {  font-style: italic } // Comment.Multiline
-    .cp    {  color: lighten($text-color, 35%); font-weight: bold }  // Comment.Preproc
-    .c1    {  color: lighten($text-color, 35%); font-style: italic } // Comment.Single
-    .cs    {  color: lighten($text-color, 35%); font-weight: bold; font-style: italic } // Comment.Special
+    .cp    {  color: var(--color-comment); font-weight: bold }  // Comment.Preproc
+    .c1    {  color: var(--color-comment); font-style: italic } // Comment.Single
+    .cs    {  color: var(--color-comment); font-weight: bold; font-style: italic } // Comment.Special
     .gd    {  } // Generic.Deleted
     .gd .x {  } // Generic.Deleted.Specific
     .ge    {  font-style: italic } // Generic.Emph
@@ -30,7 +30,7 @@
     .m     {  } // Literal.Number
     .s     {  font-style: italic; color: #0eaf34 } // Literal.String
     .na    {  } // Name.Attribute
-    .nb    {  color: $alt-color } // Name.Builtin
+    .nb    {  color: var(--color-accent) } // Name.Builtin
     .nc    {  font-weight: bold } // Name.Class
     .no    {  } // Name.Constant
     .ni    {  } // Name.Entity
@@ -56,7 +56,7 @@
     .sr    {  } // Literal.String.Regex
     .s1    {  } // Literal.String.Single
     .ss    {  } // Literal.String.Symbol
-    .bp    {  color: $alt-color } // Name.Builtin.Pseudo
+    .bp    {  color: var(--color-accent) } // Name.Builtin.Pseudo
     .vc    {  } // Name.Variable.Class
     .vg    {  } // Name.Variable.Global
     .vi    {  } // Name.Variable.Instance

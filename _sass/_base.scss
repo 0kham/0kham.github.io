@@ -1,3 +1,7 @@
+html {
+  color-scheme: light dark;
+}
+
 body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -8,23 +12,23 @@ body {
   font-feature-settings: "kern", "liga", "dlig", "salt";
   text-rendering: optimizeLegibility;
 
-  background-color: $background-color;
+  background-color: var(--color-page);
   font-family: $base-font-family;
   font-size: $base-font-size;
-  color: $text-color;
+  color: var(--color-text);
 
   a {
-      color: $alt-color;
-    
+      color: var(--color-accent);
+
   }
   a:hover {
-      color: $alt-color;
-      background-color: $highlight-text-color;
+      color: var(--color-accent);
+      background-color: var(--color-highlight);
       text-decoration: none
   }
   // this has been added by me for visited links
   a:visited, a:active{
-      color: $alt-color;
+      color: var(--color-accent);
       text-decoration: none
   }
   // this is to make space above and below the home icon
@@ -41,7 +45,7 @@ body {
 
   article > :first-child {
     &:first-letter {
-      color: $alt-color-darker;
+      color: var(--color-accent-strong);
       display: inline-block;
       float: left;
       font-size: 3.2em;
@@ -89,12 +93,12 @@ article {
   ul > li:before {
     position: absolute;
     content: "▪";
-    color: $alt-color;
+    color: var(--color-accent);
     left: -1.15em;
   }
 
   pre, code {
-    background-color: $background-color;
+    background-color: var(--color-page);
   }
 
   pre {
@@ -110,7 +114,7 @@ article {
 blockquote {
   margin-top: 1em;
   margin-bottom: 1em;
-  border-left: 2pt solid $alt-color;
+  border-left: 2pt solid var(--color-accent);
   padding-left: 0.9em;
   margin-left: -1em;
   font-style: oblique;
@@ -130,12 +134,12 @@ blockquote {
 }
 
 .main {
-  background-color: $article-bg-color;
-  border: 1px solid $bg-color-darker;
+  background-color: var(--color-paper);
+  border: 1px solid var(--color-border);
   margin-top: 16px;
   padding: 16px;
   border-radius: 16px; // this was 4px in the first place and 12px in the white version
-  border-top: 3px solid $alt-color; //for the top red bar
+  border-top: 3px solid var(--color-accent); //for the top red bar
 }
 
 .small-ornament, .big-ornament {
@@ -146,7 +150,7 @@ blockquote {
     height: 40px;
 
     path {
-        fill: $alt-color-darker;
+        fill: var(--color-accent-strong);
         fill-rule: evenodd;
         shape-rendering: geometricPrecision;
     }
@@ -175,12 +179,12 @@ footer {
   margin-bottom: 1em;
   font-size: $small-font-size;
 
-  color: $alt-text-color;
+  color: var(--color-text-muted);
 
   .biography {
     margin-top: 2em;
     padding-bottom: 1em;
-    border-bottom: 1px solid $subdued-border;
+    border-bottom: 1px solid var(--color-subdued-border);
     margin-bottom: 1em;
   }
 
@@ -193,12 +197,12 @@ footer {
   }
 
   a, a:hover {
-      color: $alt-color-darker ;
+      color: var(--color-accent-strong);
   }
 }
 
 .footnotes {
-  border-top: 1px solid $subdued-border;
+  border-top: 1px solid var(--color-subdued-border);
   padding-top: 1em;
   margin-top: 2em;
 
@@ -208,6 +212,38 @@ footer {
 
   > ol {
     margin-left: -1.5em;
+  }
+}
+
+// Table-of-contents style index, used on the homepage to list posts
+// per category with a dotted leader running to the date, like an
+// index page in a printed book.
+.toc {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5em;
+
+  li {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0.5em;
+
+    &:before {
+      content: none;
+    }
+  }
+
+  .leader {
+    flex: 1 1 auto;
+    margin: 0 0.5em;
+    border-bottom: 1px dotted var(--color-border);
+    height: 0.6em;
+  }
+
+  time {
+    white-space: nowrap;
+    font-size: $small-font-size;
+    color: var(--color-text-muted);
   }
 }
 
@@ -224,8 +260,8 @@ table {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   border-collapse: separate;
-  background-color: $background-color;
-  border-left: 2.5pt solid $alt-color;
+  background-color: var(--color-page);
+  border-left: 2.5pt solid var(--color-accent);
 
   td, th {
     display: table-cell;

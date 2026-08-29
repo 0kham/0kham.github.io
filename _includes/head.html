@@ -2,7 +2,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="theme-color" content="hsl(35, 36%, 95%)">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="hsl(51, 33%, 96%)">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="hsl(25, 16%, 9%)">
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   {% capture description %}{% if page.description %}{{ page.description }}{% elsif page.title %}{{ content | raw_content }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
@@ -22,25 +23,21 @@
       <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <script type="text/javascript">
+      <script>
        window.MathJax = {
-           tex2jax: {
+           tex: {
                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
                displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-               processEscapes: true
+               processEscapes: true,
+               tags: 'ams'
            },
-
-           TeX: {
-               equationNumbers: { autoNumber: "AMS" }
-           },
-
-           CommonHTML: {
-               scale: 90
+           chtml: {
+               scale: 0.9
            }
        };
       </script>
   <script type="text/javascript" async
-src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
   {% if jekyll.environment == "production" %}
   <!-- Google tag (gtag.js) -->
