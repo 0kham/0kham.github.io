@@ -65,6 +65,17 @@ n=57  P(match) ~= 0.990
 
 23 people is the smallest room where the odds tip in favor of a match; by 57 it's essentially guaranteed. The same $1 - \prod(\ldots)$ shape shows up anywhere you're checking pairs instead of individuals — hash collisions, birthday attacks on cryptographic digests,[^attack] deduplication in a database — which is the real reason this puzzle keeps coming back up.
 
+## An aside on formal proof
+
+Unrelated to the birthday paradox itself, but since we're already reaching for rigor: here's what an induction proof looks like in Lean 4, just to see a proof-assistant language rendered instead of a general-purpose one:
+
+```lean
+theorem add_comm_example (a b : Nat) : a + b = b + a := by
+  induction b with
+  | zero => simp
+  | succ n ih => simp [Nat.add_succ, ih]
+```
+
 [^uniform]: In reality birthdays aren't quite uniform across the year (September runs higher, February 29 far lower), which makes the true collision probability a little *higher* than this idealized model predicts, not lower — non-uniformity always increases collision odds compared to the uniform case.
 
 [^attack]: See Yuval, G. (1979), "How to Swindle Rabin", Cryptologia, for the original description of exploiting this against digital signatures.
