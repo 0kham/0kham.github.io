@@ -16,14 +16,14 @@ $mono-font-family:  'Fira Code', Menlo, Monaco, Inconsolata, monospace;
   --color-text: #404040;
   --color-text-muted: #616161;
   --color-comment: #bfbfbf;
-  --color-accent: #c72323;
-  --color-accent-strong: #ad1f1f;
-  --color-paper: #fafafa;
-  --color-page: #ebebeb;
-  --color-border: #d4d4d4;
-  --color-subdued-border: rgba(212, 212, 212, 0.5);
-  --color-highlight: rgba(199, 35, 35, 0.07);
-  --color-shadow: rgba(160, 160, 160, 0.05);
+  --color-accent: hsl(215, 55%, 30%);
+  --color-accent-strong: hsl(215, 60%, 22%);
+  --color-paper: hsl(40, 25%, 97%);
+  --color-page: hsl(40, 20%, 91%);
+  --color-border: hsl(40, 15%, 82%);
+  --color-subdued-border: hsla(40, 15%, 60%, 0.4);
+  --color-highlight: hsla(215, 60%, 30%, 0.08);
+  --color-shadow: rgba(120, 100, 70, 0.06);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,13 +31,13 @@ $mono-font-family:  'Fira Code', Menlo, Monaco, Inconsolata, monospace;
     --color-text: hsl(0, 0%, 82%);
     --color-text-muted: hsl(0, 0%, 58%);
     --color-comment: hsl(0, 0%, 45%);
-    --color-accent: hsl(0, 70%, 64%);
-    --color-accent-strong: hsl(0, 70%, 72%);
-    --color-paper: hsl(0, 0%, 14%);
-    --color-page: hsl(0, 0%, 8%);
-    --color-border: hsl(0, 0%, 26%);
-    --color-subdued-border: hsla(0, 0%, 60%, 0.25);
-    --color-highlight: hsla(0, 70%, 64%, 0.12);
+    --color-accent: hsl(215, 70%, 68%);
+    --color-accent-strong: hsl(215, 75%, 76%);
+    --color-paper: hsl(30, 12%, 14%);
+    --color-page: hsl(30, 14%, 8%);
+    --color-border: hsl(30, 10%, 26%);
+    --color-subdued-border: hsla(30, 10%, 60%, 0.25);
+    --color-highlight: hsla(215, 75%, 68%, 0.14);
     --color-shadow: transparent;
   }
 }
