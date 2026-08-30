@@ -5,7 +5,7 @@
     .c     {  color: var(--color-comment); font-style: italic } // Comment
     .err   {  } // Error
     .k     {  color: var(--color-accent) } // Keyword
-    .o     {  font-weight: bold }  // Operator
+    .o     {  font-weight: 500 }  // Operator
     .cm    {  color: var(--color-comment); font-style: italic } // Comment.Multiline
     .cp    {  color: var(--color-comment); font-weight: 500 }  // Comment.Preproc
     .c1    {  color: var(--color-comment); font-style: italic } // Comment.Single
@@ -32,11 +32,11 @@
     .s     {  font-style: italic; color: var(--color-string) } // Literal.String
     .na    {  } // Name.Attribute
     .nb    {  color: var(--color-accent) } // Name.Builtin
-    .nc    {  font-weight: bold } // Name.Class
+    .nc    {  font-weight: 500 } // Name.Class
     .no    {  } // Name.Constant
     .ni    {  } // Name.Entity
-    .ne    {  font-weight: bold } // Name.Exception
-    .nf    {  font-weight: bold } // Name.Function
+    .ne    {  font-weight: 500 } // Name.Exception
+    .nf    {  font-weight: 500 } // Name.Function
     .nn    {  } // Name.Namespace
     .nt    {  } // Name.Tag
     .nv    {  } // Name.Variable
