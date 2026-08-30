@@ -22,11 +22,11 @@
     .gs    {  font-weight: 500 } // Generic.Strong
     .gu    {  } // Generic.Subheading
     .gt    {  } // Generic.Traceback
-    .kc    {  font-weight: 500 } // Keyword.Constant
+    .kc    {  color: var(--color-accent); font-weight: 500 } // Keyword.Constant
     .kd    {  } // Keyword.Declaration
-    .kp    {  font-weight: 500 } // Keyword.Pseudo
-    .kr    {  font-weight: 500 } // Keyword.Reserved
-    .kt    {  font-weight: 500 } // Keyword.Type
+    .kp    {  color: var(--color-accent); font-weight: 500 } // Keyword.Pseudo
+    .kr    {  color: var(--color-accent); font-weight: 500 } // Keyword.Reserved
+    .kt    {  color: var(--color-accent); font-weight: 500 } // Keyword.Type
     .m     {  } // Literal.Number
     .s     {  font-style: italic; color: var(--color-string) } // Literal.String
     .na    {  } // Name.Attribute
@@ -39,7 +39,7 @@
     .nn    {  } // Name.Namespace
     .nt    {  } // Name.Tag
     .nv    {  } // Name.Variable
-    .ow    {  font-weight: 500 } // Operator.Word
+    .ow    {  color: var(--color-accent); font-weight: 500 } // Operator.Word
     .w     {  } // Text.Whitespace
     .mf    {  } // Literal.Number.Float
     .mh    {  } // Literal.Number.Hex
