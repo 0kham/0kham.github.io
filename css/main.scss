@@ -10,7 +10,7 @@ $base-font-size:   10.4pt;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$mono-font-family:  'PT Mono', Menlo, Monaco, Inconsolata, monospace;
+$mono-font-family:  'Source Code Pro', Menlo, Monaco, Inconsolata, monospace;
 
 :root {
   --color-text: #404040;
@@ -20,12 +20,12 @@ $mono-font-family:  'PT Mono', Menlo, Monaco, Inconsolata, monospace;
   --color-number: hsl(25, 45%, 40%);
   --color-accent: #c72323;
   --color-accent-strong: #ad1f1f;
-  --color-paper: hsl(40, 25%, 97%);
-  --color-page: hsl(40, 20%, 91%);
-  --color-border: hsl(40, 15%, 82%);
-  --color-subdued-border: hsla(40, 15%, 60%, 0.4);
+  --color-paper: #fafafa;
+  --color-page: #ebebeb;
+  --color-border: #d4d4d4;
+  --color-subdued-border: rgba(212, 212, 212, 0.5);
   --color-highlight: rgba(199, 35, 35, 0.07);
-  --color-shadow: rgba(120, 100, 70, 0.06);
+  --color-shadow: rgba(160, 160, 160, 0.05);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,10 +37,10 @@ $mono-font-family:  'PT Mono', Menlo, Monaco, Inconsolata, monospace;
     --color-number: hsl(25, 55%, 62%);
     --color-accent: hsl(0, 70%, 64%);
     --color-accent-strong: hsl(0, 70%, 72%);
-    --color-paper: hsl(30, 12%, 14%);
-    --color-page: hsl(30, 14%, 8%);
-    --color-border: hsl(30, 10%, 26%);
-    --color-subdued-border: hsla(30, 10%, 60%, 0.25);
+    --color-paper: hsl(0, 0%, 14%);
+    --color-page: hsl(0, 0%, 8%);
+    --color-border: hsl(0, 0%, 26%);
+    --color-subdued-border: hsla(0, 0%, 60%, 0.25);
     --color-highlight: hsla(0, 70%, 64%, 0.12);
     --color-shadow: transparent;
   }

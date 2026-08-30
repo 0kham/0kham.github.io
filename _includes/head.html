@@ -2,8 +2,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="theme-color" media="(prefers-color-scheme: light)" content="hsl(40, 20%, 91%)">
-  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="hsl(30, 14%, 8%)">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ebebeb">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="hsl(0, 0%, 8%)">
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   {% capture description %}{% if page.description %}{{ page.description }}{% elsif page.title %}{{ content | raw_content }}{% else %}{{ site.description }}{% endif %}{% endcapture %}
@@ -17,9 +17,8 @@
   <span itemprop='author'><meta name="author" content="{{ site.author }}"><span itemprop='author'></span>
 
       <link href="/favicon.png" rel="icon">
-      <link rel="stylesheet" href="//brick.a.ssl.fastly.net/PT+Serif:400,400i,700,700i:f">
+      <link rel="stylesheet" href="//brick.a.ssl.fastly.net/PT+Serif:400,400i,700,700i:f/Source+Code+Pro:400,600:f">
       <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
