@@ -28,7 +28,7 @@
     .kr    {  font-weight: 500 } // Keyword.Reserved
     .kt    {  font-weight: 500 } // Keyword.Type
     .m     {  } // Literal.Number
-    .s     {  font-style: italic; color: #0eaf34 } // Literal.String
+    .s     {  font-style: italic; color: var(--color-string) } // Literal.String
     .na    {  } // Name.Attribute
     .nb    {  color: var(--color-accent) } // Name.Builtin
     .nc    {  font-weight: 500 } // Name.Class
