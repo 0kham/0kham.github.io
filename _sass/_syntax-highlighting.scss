@@ -6,8 +6,8 @@
     .err   {  } // Error
     .k     {  color: var(--color-accent) } // Keyword
     .o     {  font-weight: bold }  // Operator
-    .cm    {  font-style: italic } // Comment.Multiline
-    .cp    {  color: var(--color-comment); font-weight: bold }  // Comment.Preproc
+    .cm    {  color: var(--color-comment); font-style: italic } // Comment.Multiline
+    .cp    {  color: var(--color-comment); font-weight: 500 }  // Comment.Preproc
     .c1    {  color: var(--color-comment); font-style: italic } // Comment.Single
     .cs    {  color: var(--color-comment); font-weight: 500; font-style: italic } // Comment.Special
     .gd    {  } // Generic.Deleted
@@ -24,10 +24,11 @@
     .gt    {  } // Generic.Traceback
     .kc    {  color: var(--color-accent) } // Keyword.Constant
     .kd    {  } // Keyword.Declaration
+    .kn    {  color: var(--color-accent) } // Keyword.Namespace
     .kp    {  color: var(--color-accent) } // Keyword.Pseudo
     .kr    {  color: var(--color-accent) } // Keyword.Reserved
     .kt    {  color: var(--color-accent) } // Keyword.Type
-    .m     {  } // Literal.Number
+    .m     {  color: var(--color-number) } // Literal.Number
     .s     {  font-style: italic; color: var(--color-string) } // Literal.String
     .na    {  } // Name.Attribute
     .nb    {  color: var(--color-accent) } // Name.Builtin
@@ -41,10 +42,11 @@
     .nv    {  } // Name.Variable
     .ow    {  color: var(--color-accent) } // Operator.Word
     .w     {  } // Text.Whitespace
-    .mf    {  } // Literal.Number.Float
-    .mh    {  } // Literal.Number.Hex
-    .mi    {  } // Literal.Number.Integer
-    .mo    {  } // Literal.Number.Oct
+    .mf    {  color: var(--color-number) } // Literal.Number.Float
+    .mh    {  color: var(--color-number) } // Literal.Number.Hex
+    .mi    {  color: var(--color-number) } // Literal.Number.Integer
+    .mo    {  color: var(--color-number) } // Literal.Number.Oct
+    .sa    {  color: var(--color-string) } // Literal.String.Affix
     .sb    {  } // Literal.String.Backtick
     .sc    {  } // Literal.String.Char
     .sd    {  } // Literal.String.Doc
@@ -60,5 +62,5 @@
     .vc    {  } // Name.Variable.Class
     .vg    {  } // Name.Variable.Global
     .vi    {  } // Name.Variable.Instance
-    .il    {  } // Literal.Number.Integer.Long
+    .il    {  color: var(--color-number) } // Literal.Number.Integer.Long
 }
