@@ -11,7 +11,7 @@ How many people do you need in a room before it's more likely than not that two 
 
 ## Counting collisions instead of matches
 
-It's much easier to compute the probability that **no two people** share a birthday than to compute the probability that some pair does. With $n$ people and 365 equally likely birthdays, the probability of no collision is
+It's much easier to compute the probability that **no two people** share a birthday than to compute the probability that some pair does. With $n$ people and 365 equally likely birthdays,[^uniform] the probability of no collision is
 
 $$
 P(\text{no match}) = \prod_{i=0}^{n-1} \frac{365 - i}{365}
@@ -63,4 +63,8 @@ n=40  P(match) ~= 0.891
 n=57  P(match) ~= 0.990
 ```
 
-23 people is the smallest room where the odds tip in favor of a match; by 57 it's essentially guaranteed. The same $1 - \prod(\ldots)$ shape shows up anywhere you're checking pairs instead of individuals — hash collisions, birthday attacks on cryptographic digests, deduplication in a database — which is the real reason this puzzle keeps coming back up.
+23 people is the smallest room where the odds tip in favor of a match; by 57 it's essentially guaranteed. The same $1 - \prod(\ldots)$ shape shows up anywhere you're checking pairs instead of individuals — hash collisions, birthday attacks on cryptographic digests,[^attack] deduplication in a database — which is the real reason this puzzle keeps coming back up.
+
+[^uniform]: In reality birthdays aren't quite uniform across the year (September runs higher, February 29 far lower), which makes the true collision probability a little *higher* than this idealized model predicts, not lower — non-uniformity always increases collision odds compared to the uniform case.
+
+[^attack]: See Yuval, G. (1979), "How to Swindle Rabin", Cryptologia, for the original description of exploiting this against digital signatures.

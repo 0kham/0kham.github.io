@@ -37,7 +37,7 @@ Take this small graph, six nodes, undirected:
 </svg>
 </div>
 
-Starting a breadth-first search from $A$, the queue empties out in the order $A, B, C, D, E, F$: everything one edge away from $A$ gets visited before anything two edges away, which is exactly the guarantee the algorithm exists to provide.
+Starting a breadth-first search from $A$, the queue empties out in the order $A, B, C, D, E, F$: everything one edge away from $A$ gets visited before anything two edges away, which is exactly the guarantee the algorithm exists to provide.[^weighted]
 
 ## The algorithm
 
@@ -73,3 +73,5 @@ print(bfs(graph, "A"))
 ## Why the queue matters
 
 Swap the queue for a stack and you've written depth-first search instead: same skeleton, different discipline about which frontier node gets explored next. The complexity is the same either way, $O(V + E)$: every vertex is enqueued once and every edge is inspected at most twice, once from each endpoint, so the work is linear in the size of the graph, not exponential in its depth. What you're paying for with BFS is the queue itself: in the worst case, a wide, shallow graph, it can hold $O(V)$ nodes at once, where DFS's recursion stack only ever holds one path's worth.
+
+[^weighted]: The "fewest edges" guarantee is specifically about *unweighted* graphs. The moment edges carry different costs, BFS's shortest-path property breaks down, since it explores strictly in order of edge count, not total weight — that's the gap Dijkstra's algorithm exists to close.
