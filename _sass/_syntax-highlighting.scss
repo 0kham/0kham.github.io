@@ -32,11 +32,11 @@
     .s     {  font-style: italic; color: var(--color-string) } // Literal.String
     .na    {  } // Name.Attribute
     .nb    {  color: var(--color-accent) } // Name.Builtin
-    .nc    {  font-weight: 500 } // Name.Class
+    .nc    {  font-weight: bold } // Name.Class
     .no    {  } // Name.Constant
     .ni    {  } // Name.Entity
-    .ne    {  font-weight: 500 } // Name.Exception
-    .nf    {  font-weight: 500 } // Name.Function
+    .ne    {  font-weight: bold } // Name.Exception
+    .nf    {  font-weight: bold } // Name.Function
     .nn    {  } // Name.Namespace
     .nt    {  } // Name.Tag
     .nv    {  } // Name.Variable
